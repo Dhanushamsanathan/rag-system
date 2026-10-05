@@ -1,0 +1,65 @@
+{
+  "bids_compared": [
+    "Bid1",
+    "Bid2"
+  ],
+  "matrix": [
+    {
+      "Dimension": "Official Solicitation Identifier",
+      "Bid1": "JA-207652 (Sourcing #168884)",
+      "Bid2": "PORFP #E20P4600040 (eMMA Project: BPM044557)"
+    },
+    {
+      "Dimension": "Solicitation Title",
+      "Bid1": "Student and Staff Computing Devices",
+      "Bid2": "Dell Laptops w/ Extended Warranty"
+    },
+    {
+      "Dimension": "Issuing Agency",
+      "Bid1": "Dallas Independent School District (Dallas ISD)",
+      "Bid2": "Maryland State Treasurer's Office"
+    },
+    {
+      "Dimension": "Final Submission Deadline",
+      "Bid1": "2024-07-09 14:00 CST",
+      "Bid2": "2024-06-10 14:00 EDT"
+    },
+    {
+      "Dimension": "Requested Hardware & Quantities",
+      "Bid1": "Student and Staff Computing Devices (Laptops, Desktops, Tablets, and Display Monitors - estimated district replenishment volumes)",
+      "Bid2": "Dell Latitude 5550 Laptops (Qty: 30) and Dell Thunderbolt 4 Docks WD22TB4 (Qty: 30)"
+    },
+    {
+      "Dimension": "Deployment & Staging Scope",
+      "Bid1": "Required: White Glove Services including software installation, asset tagging, etching, and device deployment",
+      "Bid2": "Not required (Delivery only to MD State Treasurer's Office, 80 Calvert Street Room 109, Annapolis MD)"
+    },
+    {
+      "Dimension": "Surety / Bonding Threshold",
+      "Bid1": "None / Not Required",
+      "Bid2": "None / Not Required"
+    },
+    {
+      "Dimension": "Invoicing & Payment Schedule",
+      "Bid1": "None / Not Required",
+      "Bid2": "Invoices submitted to STOaccountspayable@treasurer.state.md.us within 10 days of equipment delivery; payable upon state acceptance"
+    },
+    {
+      "Dimension": "Purchasing Contract Vehicle",
+      "Bid1": "Educational Purchasing Cooperative of North Texas (EPCNT) Interlocal Cooperative Agreement",
+      "Bid2": "Desktop, Laptop and Tablet 2015 Master Contract (Contract # 060B5400007 - Functional Areas FA I and FA V)"
+    },
+    {
+      "Dimension": "Required Compliance Documents",
+      "Bid1": "Form 1295 (Certificate of Interested Parties), M/WBE compliance documentation, Certificate of Insurance, W-9, and signed Addenda acknowledgments",
+      "Bid2": "Mercury Affidavit, Contract Affidavit, and Manufacturer Letter of Authorization (LOA) if requested"
+    }
+  ],
+  "executive_synthesis": "Cross-Bid Executive Summary: Bid1 (Dallas ISD) and Bid2 (MD State Treasurer) present complementary public sector procurement opportunities. Bid2 offers an immediate, low-complexity transaction with fixed quantities and zero deployment staging, whereas Bid1 represents a multi-year master contract vehicle with recurring orders and value-added white glove staging services.",
+  "comparative_analysis": {
+    "Scope & Volume": "Bid1 represents an enterprise school district replenishment contract for varied student and staff computing devices across multiple academic years. In contrast, Bid2 is a targeted secondary competition procuring an exact batch of 30 Dell Latitude laptops and 30 docks for departmental expansion.",
+    "Operational Complexity": "Bid1 carries higher operational staging complexity due to mandatory White Glove services (software imaging, laser etching, and multi-site distribution). Bid2 requires hardware delivery only to a central facility.",
+    "Timeline & Addenda": "Bid1 experienced an active addenda cycle with Addendum 2 extending the submission deadline to July 9, 2024. Bid2 closed on June 10, 2024 under standard timeline provisions.",
+    "Compliance Requirements": "Bid1 mandates Form 1295 Interested Parties disclosure and M/WBE compliance participation. Bid2 specifically requires the state-mandated Mercury Affidavit and Contract Affidavit."
+  }
+}

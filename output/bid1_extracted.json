@@ -1,0 +1,331 @@
+{
+  "bid_id": "Bid1",
+  "fields": {
+    "Due Date": {
+      "value": "2024-07-09 14:00 CST",
+      "sources": [
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        },
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        },
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Extended by Addendum 2 (original date: 2024-06-27 14:00:00)"
+    },
+    "Delivery Date": {
+      "value": "Delivery to varied district locations as specified in individual purchase orders",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 31
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 17
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Extracted from delivery terms"
+    },
+    "Bid Submission Type": {
+      "value": "Electronic submission via District Purchasing Portal / BidNet Direct",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Specified in solicitation submission instructions"
+    },
+    "Term of Bid": {
+      "value": "Three (3) year agreement with two (2) successive one (1) year renewal options",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.93,
+      "notes": "Identified in contract terms"
+    },
+    "Pre Bid Meeting": {
+      "value": "June 10, 2024 at 2:00 PM CST (Non-mandatory / Pre-proposal conference)",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Identified in schedule of events"
+    },
+    "contact_info": {
+      "value": "Contact: ProcurementCS@dallasisd.org, Phone: 0000407910",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 61
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Extracted procurement point of contact"
+    },
+    "company_name": {
+      "value": "Dallas Independent School District (Dallas ISD)",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Issuing authority identified"
+    },
+    "Bid Number": {
+      "value": "JA-207652 (Sourcing #168884)",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Solicitation reference number verified"
+    },
+    "Title": {
+      "value": "Student and Staff Computing Devices",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Formal RFP title confirmed"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 17
+        }
+      ],
+      "confidence": 0.88,
+      "notes": "Not required"
+    },
+    "Payment Terms": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.4,
+      "notes": "Extracted invoicing and payment stipulations"
+    },
+    "Any Additional Documentation Required": {
+      "value": "Form 1295 (Certificate of Interested Parties), M/WBE compliance documentation, Certificate of Insurance, W-9, and signed Addenda acknowledgments",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 14
+        },
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Compiled required submission attachments and affidavits"
+    },
+    "MFG for Registration": {
+      "value": "OEM Manufacturer or Certified Authorized Reseller for proposed computing hardware",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 6
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Authorized partner accreditation requirement"
+    },
+    "Contract or Cooperative to use": {
+      "value": "Educational Purchasing Cooperative of North Texas (EPCNT) Interlocal Cooperative Agreement",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 19
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 19
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Identified applicable cooperative purchasing vehicle"
+    },
+    "Model_no": {
+      "value": "Various OEM models meeting specifications (Student Laptops, Staff Laptops, Student Tablets, Display Monitors)",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 36
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 36
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Model designations identified from item schedule"
+    },
+    "Part_no": {
+      "value": "To be assigned by responding vendor per line item specifications (Line items 1-11)",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 23
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 35
+        }
+      ],
+      "confidence": 0.91,
+      "notes": "Identified from manufacturer specification sheet / pricing schedule"
+    },
+    "Product": {
+      "value": "Student and Staff Computing Devices (Laptops, Desktops, Tablets, and Display Monitors - estimated district replenishment volumes)",
+      "sources": [
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 34
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Hardware products and quantities requested"
+    },
+    "Installation": {
+      "value": "Required: White Glove Services including software installation, asset tagging, etching, and device deployment",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.93,
+      "notes": "Verified deployment and staging requirements"
+    },
+    "Product Specification": {
+      "value": "Staff Laptop: Min 16GB DDR5 RAM, 256GB NVMe SSD, 1920x1080 display, Wi-Fi 6E, Type-C 65W power, min 10hr battery life, Windows 11 Pro, 3-year warranty; Student Tablet: Processor A13, 10.2\" Retina display, 8MP camera; Non-touch monitors with USB 3.1",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 6
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 5
+        }
+      ],
+      "confidence": 0.96,
+      "notes": "Detailed technical hardware and warranty specifications"
+    },
+    "Bid Summary": {
+      "value": "Dallas Independent School District (Dallas ISD) has issued RFP JA-207652 (Sourcing #168884) to procure student and staff computing devices, including laptops, desktops, tablets, and display monitors. The contract is established for a three-year primary term with two optional one-year extensions, supporting both local and federal grant funding. Addendum 1 addresses 35 vendor technical clarification questions, while Addendum 2 officially extends the proposal submission deadline to July 9, 2024 at 2:00 PM CST.",
+      "sources": [
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 22
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Synthesized concise 3-6 sentence executive summary"
+    }
+  },
+  "addendum_changes": [
+    {
+      "field_name": "Due Date",
+      "original_value": "2024-06-27 14:00:00",
+      "new_value": "2024-07-09 14:00 CST",
+      "addendum_file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "page": 1,
+      "reason": "Solicitation submission deadline officially extended by Addendum No. 2"
+    },
+    {
+      "field_name": "Product Specification",
+      "original_value": "Display monitor USB port specification inquiry",
+      "new_value": "USB 3.1 reaffirmed as mandatory minimum specification for display monitors",
+      "addendum_file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "page": 1,
+      "reason": "Vendor inquiry clarification #1 confirmed USB 3.1 requirement"
+    },
+    {
+      "field_name": "Any Additional Documentation Required",
+      "original_value": "Form 1295 required submission timeline clarification",
+      "new_value": "Form 1295 must be signed and submitted with response attachments or prior to award",
+      "addendum_file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+      "page": 4,
+      "reason": "Vendor question #31 clarified Certificate of Interested Parties timing"
+    }
+  ],
+  "validation": {
+    "passed": 18,
+    "failed": 0,
+    "not_found": 2
+  }
+}

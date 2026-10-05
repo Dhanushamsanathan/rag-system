@@ -1,0 +1,195 @@
+[
+  {
+    "step_id": 1,
+    "timestamp": "2026-10-04T08:38:23.689102Z",
+    "agent_name": "Orchestrator",
+    "action": "formulate_plan",
+    "input_data": {
+      "bid_folder": "/Users/dhanushamsanathan/Documents/RAg/data/Bid1",
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "plan": [
+        "Step 1: Ingestion & Document Indexing",
+        "Step 2: Dispatch Specialized Extraction Agents (Parallel)",
+        "Step 3: Addendum Reconciliation & Supersession Analysis",
+        "Step 4: Critic Validation & Evidence Grounding Check",
+        "Step 5: Feedback / Retry Loop for Rejected Fields",
+        "Step 6: Final Section 8.1 JSON Generation"
+      ]
+    },
+    "latency_ms": 0.0,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 2,
+    "timestamp": "2026-10-04T08:38:38.760654Z",
+    "agent_name": "IngestionAgent",
+    "action": "process_bid_folder",
+    "input_data": {
+      "folder_path": "/Users/dhanushamsanathan/Documents/RAg/data/Bid1",
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "pages_count": 63,
+      "chunks_count": 581
+    },
+    "latency_ms": 15070.25,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 3,
+    "timestamp": "2026-10-04T08:41:16.432955Z",
+    "agent_name": "ProductSpecsExtractor",
+    "action": "extract_fields",
+    "input_data": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "extracted_fields": [
+        "Model_no",
+        "Part_no",
+        "Product",
+        "Installation",
+        "Product Specification",
+        "Bid Summary"
+      ]
+    },
+    "latency_ms": 157671.26,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 4,
+    "timestamp": "2026-10-04T08:41:28.156377Z",
+    "agent_name": "CommercialLegalExtractor",
+    "action": "extract_fields",
+    "input_data": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "extracted_fields": [
+        "Bid Number",
+        "Title",
+        "Bid Bond Requirement",
+        "Payment Terms",
+        "Any Additional Documentation Required",
+        "MFG for Registration",
+        "Contract or Cooperative to use"
+      ]
+    },
+    "latency_ms": 169395.06,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 5,
+    "timestamp": "2026-10-04T08:41:31.850127Z",
+    "agent_name": "DatesLogisticsExtractor",
+    "action": "extract_fields",
+    "input_data": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "extracted_fields": [
+        "Due Date",
+        "Delivery Date",
+        "Bid Submission Type",
+        "Term of Bid",
+        "Pre Bid Meeting",
+        "contact_info",
+        "company_name"
+      ]
+    },
+    "latency_ms": 173089.14,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 6,
+    "timestamp": "2026-10-04T08:41:36.988865Z",
+    "agent_name": "AddendumReconciliationAgent",
+    "action": "reconcile",
+    "input_data": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "changes": [
+        {
+          "field_name": "Due Date",
+          "original_value": "2024-06-27 14:00:00",
+          "new_value": "2024-07-09 14:00 CST",
+          "addendum_file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1,
+          "reason": "Solicitation submission deadline officially extended by Addendum No. 2"
+        },
+        {
+          "field_name": "Product Specification",
+          "original_value": "Display monitor USB port specification inquiry",
+          "new_value": "USB 3.1 reaffirmed as mandatory minimum specification for display monitors",
+          "addendum_file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1,
+          "reason": "Vendor inquiry clarification #1 confirmed USB 3.1 requirement"
+        },
+        {
+          "field_name": "Any Additional Documentation Required",
+          "original_value": "Form 1295 required submission timeline clarification",
+          "new_value": "Form 1295 must be signed and submitted with response attachments or prior to award",
+          "addendum_file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4,
+          "reason": "Vendor question #31 clarified Certificate of Interested Parties timing"
+        }
+      ]
+    },
+    "latency_ms": 5137.2,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 7,
+    "timestamp": "2026-10-04T08:41:36.989625Z",
+    "agent_name": "ValidatorAgent",
+    "action": "validate_all",
+    "input_data": {
+      "total_fields": 20
+    },
+    "tool_calls": [],
+    "output_data": {
+      "summary": {
+        "passed": 18,
+        "failed": 0,
+        "not_found": 2,
+        "total": 20
+      },
+      "failed_fields": []
+    },
+    "latency_ms": 0.58,
+    "tokens_used": 0,
+    "status": "success"
+  },
+  {
+    "step_id": 8,
+    "timestamp": "2026-10-04T08:41:36.989967Z",
+    "agent_name": "Orchestrator",
+    "action": "finalize_pipeline",
+    "input_data": {
+      "bid_id": "Bid1"
+    },
+    "tool_calls": [],
+    "output_data": {
+      "status": "completed",
+      "total_fields": 20
+    },
+    "latency_ms": 193301.03,
+    "tokens_used": 0,
+    "status": "success"
+  }
+]

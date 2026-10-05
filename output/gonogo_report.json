@@ -1,0 +1,33 @@
+{
+  "Bid1": {
+    "bid_id": "Bid1",
+    "decision": "CONDITIONAL_GO",
+    "match_score": 75.0,
+    "strengths": [
+      "Installation Capability: White Glove staging and asset tagging are fully supported internally.",
+      "Procurement Vehicle: Eligible under registered state/cooperative contract vehicle.",
+      "Delivery Timeline: 45-day window aligns comfortably with OEM supply chain lead times.",
+      "Financial Bonding: Zero bid bond requirement eliminates upfront surety overhead."
+    ],
+    "risks_and_blockers": [
+      "OEM Authorization: Proposed hardware may require vendor partner sub-authorization."
+    ],
+    "mitigation_strategies": [],
+    "executive_summary": "CONDITIONAL GO recommendation for Bid1 (Score: 75.0/100). High probability of win, subject to addressing identified items: OEM Authorization: Proposed hardware may require vendor partner sub-authorization.."
+  },
+  "Bid2": {
+    "bid_id": "Bid2",
+    "decision": "GO",
+    "match_score": 100.0,
+    "strengths": [
+      "OEM Authorization: Fully certified with requested manufacturer partner (Dell (Bidder must be an authorized reseller for Dell and pro).",
+      "Installation Scope: Hardware delivery only; low operational staging complexity.",
+      "Procurement Vehicle: Eligible under registered state/cooperative contract vehicle.",
+      "Delivery Timeline: 45-day window aligns comfortably with OEM supply chain lead times.",
+      "Financial Bonding: Zero bid bond requirement eliminates upfront surety overhead."
+    ],
+    "risks_and_blockers": [],
+    "mitigation_strategies": [],
+    "executive_summary": "Definitive GO recommendation for Bid2 (Score: 100.0/100). The RFP aligns seamlessly with company OEM authorizations, internal staging capabilities, and contract vehicles."
+  }
+}

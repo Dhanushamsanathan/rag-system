@@ -1,0 +1,371 @@
+[
+  {
+    "question_id": 1,
+    "question": "What is the submission deadline for Bid1 after all addendums?",
+    "answer": "The submission deadline for Bid1 (JA-207652) was originally June 27, 2024 at 2:00 PM CST [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 2], but was officially extended by Addendum No. 2 to **July 9, 2024 at 2:00 PM CST** (or 03:00 PM EDT) [Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1].",
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 32,
+        "text_snippet": "[PROPOSAL GENERAL INFORMATION] in disqualification. All communication shall go through the Procurement Services Department during this competitive process. All questions received and the corresponding",
+        "score": -2.5795
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "text_snippet": "\u201cvalue\u201d DISD would like displayed here, is just the spec\u2019s of the device in question. Answer: Yes, the specs, more specifically the proposed make and model of the device being proposed, should be incl",
+        "score": -3.0851
+      },
+      {
+        "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "text_snippet": "ADDENDUM No. 2 RFP JA-207652 Student and Staff Computing Devices The Purpose of this Addendum is to extend the due date of this RFP. The new due date for this RFP will be July 9, 2024 at 2:00 PM CST. ",
+        "score": -4.2848
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 5,
+        "text_snippet": "ADDENDUM No. 1 RFP JA-207652 Student and Staff Computing Devices The information in this Addendum is hereby incorporated and made part of any contract awarded pursuant to this solicitation. Please sig",
+        "score": -4.4528
+      }
+    ],
+    "bids_referenced": [
+      "Bid1"
+    ],
+    "latency_ms": 6779.3
+  },
+  {
+    "question_id": 2,
+    "question": "Which affidavits are required for the Dell laptop bid?",
+    "answer": "The required affidavits for the Dell laptop bid are the **Mercury Affidavit** [Mercury_Affidavit.pdf, Page 1; PORFP_-_Dell_Laptop_Final.pdf, Page 2] and the **Contract Affidavit** [Contract_Affidavit.pdf, Page 1]. Additionally, bidders must provide an authorized manufacturer Letter of Authorization (LOA) upon request [PORFP_-_Dell_Laptop_Final.pdf, Page 2].",
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "text_snippet": "[### Extracted Tables:] |  |  | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTI",
+        "score": 3.7541
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "bid responses, questions to the buyer or further information is conducted independent of BidNet Direct. Print Options All Notice Addendums Categories Documents Print Follow Print Share Mail Email Face",
+        "score": -3.0365
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For m",
+        "score": -3.3489
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For m",
+        "score": -3.3489
+      }
+    ],
+    "bids_referenced": [
+      "Bid2"
+    ],
+    "latency_ms": 12483.26
+  },
+  {
+    "question_id": 3,
+    "question": "Compare the warranty requirements of both bids.",
+    "answer": "Comparison of warranty requirements between both bids:\n- **Bid1 (Dallas ISD)**: Requires a 3-year minimum OEM warranty for student and staff computing devices, with an SLA mandating all warranty repairs or replacements be completed within five (5) business days at no cost [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 4-5].\n- **Bid2 (MD State Treasurer)**: Requires Dell Limited Hardware Warranty Extended for 3 years following the date of delivery, with a warranty certificate or affidavit presented upon award [PORFP_-_Dell_Laptop_Final.pdf, Page 3].",
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 6,
+        "text_snippet": "[### Extracted Tables:] | SCOPE AND SPECIFICATIONS OF THE PROPOSAL |  | | --- | --- | | \u2022 4 GB Video card \u2022 Touchscreen optional \u2022 Warranty: 3-year minimum Tier 1 Staff Basic Laptop Minimum Requiremen",
+        "score": -2.8883
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 3,
+        "text_snippet": "[Section 4 \u2013 Scope of Work] of warranty requirements and deliverables) Warranty Requirements Deliverables Start Date End Date mm/dd/yyyy mm/dd/yyyy 1. Dell Limited Hardware Warranty Warranty Date of 3",
+        "score": -3.8161
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 3,
+        "text_snippet": "[### Extracted Tables:] |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- ",
+        "score": -3.8752
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 4,
+        "text_snippet": "[### Extracted Tables:] | SCOPE AND SPECIFICATIONS OF THE PROPOSAL |  | | --- | --- | | All warranties shall become effective on the date the equipment is placed into service, as agreed-upon by Dallas",
+        "score": -3.968
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 6,
+        "text_snippet": "[PROPOSAL] Laptop Minimum Requirements \u2022 Enterprise Management Ready \u2022 Intel i7 CPU, 14th Gen or equivalent. \u2022 Display: Minimum 13\" diagonal screen \u2022 Integrated Camera: 1080p \u2022 Resolution: 1920 X 1080",
+        "score": -4.1864
+      }
+    ],
+    "bids_referenced": [
+      "Bid1",
+      "Bid2"
+    ],
+    "latency_ms": 26528.21
+  },
+  {
+    "question_id": 4,
+    "question": "Is a bid bond required, and if so, how much?",
+    "answer": "Neither bid requires a bid bond:\n- In **Bid1 (Dallas ISD)**, no bid bond is required for this equipment purchase (listed as None / Not Required) [Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html, Page 1].\n- In **Bid2 (MD State Treasurer)**, bid bond is not required (0% / Not Required) for this secondary competition PORFP [PORFP_-_Dell_Laptop_Final.pdf, Page 1; Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html, Page 1].",
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 9,
+        "text_snippet": "[OFFER SUBMITTAL] bid bond, or liability requirements of the District as noted elsewhere in this solicitation document. The Offeror must include pertinent literature/documentation for the proposed pro",
+        "score": 0.2557
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 9,
+        "text_snippet": "[OFFER SUBMITTAL] PDF version of the solicitation may result in the Offer being disqualified or deemed non-responsive. The Offerors shall familiarize themselves with the relevant conditions in the mat",
+        "score": -1.1934
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 26,
+        "text_snippet": "[FEDERAL REQUIREMENTS (EDGAR)] be at least the amount required by the applicable contract specifications or other contractual requirements. Does the Vendor agree? -------------------------------------",
+        "score": -3.8481
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 17,
+        "text_snippet": "[INSURANCE AND/OR BONDS] Insurance and/or bond requirements are enumerated elsewhere in Contract documents. Submission of a certificate of insurance/bond by the undersigned (or an agent/broker on beha",
+        "score": -3.8846
+      }
+    ],
+    "bids_referenced": [],
+    "latency_ms": 13611.3
+  },
+  {
+    "question_id": 5,
+    "question": "What changed in Addendum 2 compared to the original RFP?",
+    "answer": "In **Addendum No. 2** for Bid1 (JA-207652), the sole purpose was to extend the RFP submission deadline. The due date was changed to **July 9, 2024 at 2:00 PM CST** (originally June 27, 2024). All other provisions, terms, and conditions remained unchanged [Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf, Page 1].",
+    "citations": [
+      {
+        "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "text_snippet": "ADDENDUM No. 2 RFP JA-207652 Student and Staff Computing Devices The Purpose of this Addendum is to extend the due date of this RFP. The new due date for this RFP will be July 9, 2024 at 2:00 PM CST. ",
+        "score": -2.5121
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 3,
+        "text_snippet": "ADDENDUM No. 1 RFP JA-207652 Student and Staff Computing Devices 25. In RFP Section 2.1 Line Information (pricing table) #11, will you please clarify if you would like us to include a minimum price fo",
+        "score": -3.8387
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "text_snippet": "ADDENDUM No. 1 RFP JA-207652 Student and Staff Computing Devices The Purpose of this Addendum is to provide responses to the vendors\u2019 questions related to this RFP. 1. The Display monitor \u2013 non-Touch ",
+        "score": -3.8484
+      },
+      {
+        "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "bid responses, questions to the buyer or further information is conducted independent of BidNet Direct. Print Options All Notice Addendums Categories Documents Print Follow Print Share Mail Email Face",
+        "score": -4.2023
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "bid responses, questions to the buyer or further information is conducted independent of BidNet Direct. Print Options All Notice Addendums Categories Documents Print Follow Print Share Mail Email Face",
+        "score": -4.4117
+      }
+    ],
+    "bids_referenced": [
+      "Bid1",
+      "Bid2"
+    ],
+    "latency_ms": 20317.68
+  },
+  {
+    "question_id": 6,
+    "question": "What laptop and dock hardware specifications are required for the Maryland State Treasurer procurement?",
+    "answer": "Based on the bid documents, CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For more information on this solicitation, please click on the following link: https://emma.maryland.gov/page.aspx/en/bpm/process_manage_extranet/70726 (op... [Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html, Page 1]",
+    "citations": [
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For m",
+        "score": 3.8367
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For m",
+        "score": 3.8367
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* SI# CC7802 30 06/10/2024 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 Dell Thunderbolt 4 Dock \u2013 WD22TB4 WD22TB4 30 06/10/2024 See more For m",
+        "score": 2.0756
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "text_snippet": "[### Extracted Tables:] |  |  | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTI",
+        "score": 1.1966
+      }
+    ],
+    "bids_referenced": [
+      "Bid2"
+    ],
+    "latency_ms": 13766.76
+  },
+  {
+    "question_id": 7,
+    "question": "What white glove services are requested by Dallas ISD for student and staff devices?",
+    "answer": "Based on the bid documents, [### Extracted Tables:]\n| SCOPE AND SPECIFICATIONS OF THE PROPOSAL |  |\n| --- | --- |\n| requirements to procure vendors who provide goods or services purchased by Dallas ISD using federal dollars. This proposal may be used with local, state, federal, and grant-funded programs. |  |\n| PURPOSE OF REQUEST FOR PROPOSAL (RFP) This Request for Proposal (... [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 3]",
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 3,
+        "text_snippet": "[### Extracted Tables:] | SCOPE AND SPECIFICATIONS OF THE PROPOSAL |  | | --- | --- | | requirements to procure vendors who provide goods or services purchased by Dallas ISD using federal dollars. Thi",
+        "score": 7.6631
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 3,
+        "text_snippet": "[PURPOSE OF REQUEST FOR PROPOSAL (RFP)] which outlines how tracking will be executed and any processes for providing white glove services. The awarded vendors shall provide Dallas ISD with computing d",
+        "score": 4.8792
+      },
+      {
+        "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page": 1,
+        "text_snippet": "be awarded at the August board meeting. 4. When do you need these delivered by? Answer: Dallas ISD is anticipating requesting quotes for different projects from awarded vendors starting in September o",
+        "score": 4.3132
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 3,
+        "text_snippet": "[PROPOSAL SPECIFICATIONS] attachments or parts to be installed must follow the manufacturer's recommendations or standard industry practices. Deployment Services All deliveries and deployments must in",
+        "score": 3.689
+      }
+    ],
+    "bids_referenced": [
+      "Bid1"
+    ],
+    "latency_ms": 15314.76
+  },
+  {
+    "question_id": 8,
+    "question": "What cooperative purchasing contract vehicle is referenced in Bid2?",
+    "answer": "Based on the bid documents, Loading... Skip to main content\nGo to homepage My Profile My Organization Contacts Purchasing Groups Finance Services Logout \u200b Search Search Blank Envelope Matching Profiles Blank Envelope Saved Searches Bid Management Bid Management Dartboard Qualifications Dashboard Dashboard Requested Documents Requested Documents Participating Organizations Par... [Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html, Page 1]",
+    "citations": [
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "Loading... Skip to main content Go to homepage My Profile My Organization Contacts Purchasing Groups Finance Services Logout \u200b Search Search Blank Envelope Matching Profiles Blank Envelope Saved Searc",
+        "score": -4.7126
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "bid responses, questions to the buyer or further information is conducted independent of BidNet Direct. Print Options All Notice Addendums Categories Documents Print Follow Print Share Mail Email Face",
+        "score": -5.2734
+      },
+      {
+        "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+        "page": 1,
+        "text_snippet": "[06/10/2024 02:00 PM EDT] bid responses, questions to the buyer or further information is conducted independent of BidNet Direct. Disclaimer Print Options All Notice Addendums Categories Documents Pri",
+        "score": -7.0246
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 1,
+        "text_snippet": "[### Extracted Tables:] |  |  |  |  |  |  |  |  |  | | --- | --- | --- | --- | --- | --- | --- | --- | --- | |  | Business Reserve?(SBR): |  |  |  |  |  |  |  | |  |  |  |  |  |  |  |  |  | |  | Minor",
+        "score": -9.0547
+      }
+    ],
+    "bids_referenced": [
+      "Bid2"
+    ],
+    "latency_ms": 14304.39
+  },
+  {
+    "question_id": 9,
+    "question": "Who are the primary procurement contacts for both solicitations?",
+    "answer": "Based on the bid documents, [TERRORIST ORGANIZATIONS]\nMembers agree to undertake the following, from time to time, as may be appropriate: a. Coordinate and host multi-governmental entity solicitations for purchase of goods and services from thirdparty vendors, as may be determined from time to time to be cost-effective and provide efficiencies as\nconsolidated purchases. b. Ma... [JA-207652 Student and Staff Computing Devices FINAL.pdf, Page 19]",
+    "citations": [
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 19,
+        "text_snippet": "[TERRORIST ORGANIZATIONS] Members agree to undertake the following, from time to time, as may be appropriate: a. Coordinate and host multi-governmental entity solicitations for purchase of goods and s",
+        "score": -5.0307
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 31,
+        "text_snippet": "[BACKGROUND INFORMATION / BASIC REQUIREMENTS] 1. In this document, \"Offer\" refers to a response to any District solicitation (CSP, RFP, or RFQ). \"Bid\" refers specifically to a response to a solicitati",
+        "score": -5.1356
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 2,
+        "text_snippet": "[PROPOSAL] solicitation. All vendors are encouraged to participate even if vendors are the sole source providers. This proposal is being issued in accordance with Title 2 of the Code of Federal Regula",
+        "score": -5.7287
+      },
+      {
+        "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page": 61,
+        "text_snippet": "Independent School District Punch-out Setup Request PLEASE COMPLETE THE FORM BELOW AND RETURN TO DGORACLEFDTEAM@DALLASISD.ORG. Dallas ISD Procurement Application: Oracle Applications, Release 12 Resou",
+        "score": -5.7771
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 1,
+        "text_snippet": "[BID SUBMISSION INSTRUCTIONS] Purchase Order Request for Proposal (PORFP) responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system. Bids will not",
+        "score": -6.0645
+      }
+    ],
+    "bids_referenced": [
+      "Bid1",
+      "Bid2"
+    ],
+    "latency_ms": 28352.13
+  },
+  {
+    "question_id": 10,
+    "question": "What payment and invoicing terms are specified for the Dell laptop contract?",
+    "answer": "Based on the bid documents, [### Extracted Tables:]\n|  |  | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than the date and time specified. |  |\n| ... [PORFP_-_Dell_Laptop_Final.pdf, Page 2]",
+    "citations": [
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "text_snippet": "[### Extracted Tables:] |  |  | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTI",
+        "score": 1.0112
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "text_snippet": "[### Extracted Tables:] |  |  | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTI",
+        "score": -2.0648
+      },
+      {
+        "file": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page": 2,
+        "text_snippet": "9. Delivery within 45 days of Award. Invoicing Instructions: 1. Email invoices to: STOaccountspayable@treasurer.state.md.us 2. Invoice(s) shall be submitted within 10 days of delivering the equipment ",
+        "score": -2.6739
+      },
+      {
+        "file": "Dell_Laptop_Specs.pdf",
+        "page": 3,
+        "text_snippet": "will be applied to Customer\u2019s invoice. Supplier encourages customers to dispose of electronic equipment properly. Electronically linked terms and descriptions are available in hard copy upon request. ",
+        "score": -2.9001
+      }
+    ],
+    "bids_referenced": [
+      "Bid2"
+    ],
+    "latency_ms": 14089.05
+  }
+]

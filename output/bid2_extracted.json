@@ -1,0 +1,302 @@
+{
+  "bid_id": "Bid2",
+  "fields": {
+    "Due Date": {
+      "value": "2024-06-10 14:00 EDT",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Closing Date per PORFP and BidNet Portal"
+    },
+    "Delivery Date": {
+      "value": "Within 45 days of Award",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Extracted from delivery terms"
+    },
+    "Bid Submission Type": {
+      "value": "Electronic submission via eMaryland Marketplace Advantage (eMMA) e-Procurement system (no email, fax, or paper)",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Specified in solicitation submission instructions"
+    },
+    "Term of Bid": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.4,
+      "notes": "Not found in documents"
+    },
+    "Pre Bid Meeting": {
+      "value": "None",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Identified in schedule of events"
+    },
+    "contact_info": {
+      "value": "Tamaira Hawkins, Phone: 410-260-7533, Email: thawkins@treasurer.state.md.us",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Extracted procurement point of contact"
+    },
+    "company_name": {
+      "value": "Maryland State Treasurer's Office",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Issuing authority identified"
+    },
+    "Bid Number": {
+      "value": "PORFP #E20P4600040 (eMMA Project: BPM044557)",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Solicitation reference number verified"
+    },
+    "Title": {
+      "value": "Dell Laptops w/ Extended Warranty",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Formal RFP title confirmed"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 0.88,
+      "notes": "Not found in documents"
+    },
+    "Payment Terms": {
+      "value": "Invoices submitted to STOaccountspayable@treasurer.state.md.us within 10 days of equipment delivery; payable upon state acceptance",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.9,
+      "notes": "Extracted invoicing and payment stipulations"
+    },
+    "Any Additional Documentation Required": {
+      "value": "Mercury Affidavit, Contract Affidavit, and Manufacturer Letter of Authorization (LOA) if requested",
+      "sources": [
+        {
+          "file": "Mercury_Affidavit.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Compiled required submission attachments and affidavits"
+    },
+    "MFG for Registration": {
+      "value": "Dell (Bidder must be an authorized reseller for Dell and provide Letter of Authorization upon request)",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.92,
+      "notes": "Authorized partner accreditation requirement"
+    },
+    "Contract or Cooperative to use": {
+      "value": "Desktop, Laptop and Tablet 2015 Master Contract (Contract # 060B5400007 - Functional Areas FA I and FA V)",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Identified applicable cooperative purchasing vehicle"
+    },
+    "Model_no": {
+      "value": "SI# CC7802 (Dell Latitude 5550); WD22TB4 (Dell Thunderbolt 4 Dock)",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 0.94,
+      "notes": "Model designations identified from item schedule"
+    },
+    "Part_no": {
+      "value": "Base SKU: 210-BLYZ (Dell Latitude 5550 XCTO Base); Dock SKU: WD22TB4",
+      "sources": [
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.91,
+      "notes": "Identified from manufacturer specification sheet / pricing schedule"
+    },
+    "Product": {
+      "value": "Dell Latitude 5550 Laptops (Qty: 30) and Dell Thunderbolt 4 Docks WD22TB4 (Qty: 30)",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Hardware products and quantities requested"
+    },
+    "Installation": {
+      "value": "Not required (Delivery only to MD State Treasurer's Office, 80 Calvert Street Room 109, Annapolis MD)",
+      "sources": [
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.93,
+      "notes": "Verified deployment and staging requirements"
+    },
+    "Product Specification": {
+      "value": "Intel Core Ultra 5 125U (12 cores, up to 4.3 GHz); 16 GB DDR5 5600 MT/s; 256 GB PCIe NVMe SSD; 15.6\" FHD (1920x1080) Non-Touch IPS 250 nit; Intel Wi-Fi 6E AX211 + BT 5.3; 54 Wh battery; 65W USB-C adapter; Windows 11 Pro; 3-Year Extended Hardware Warranty",
+      "sources": [
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.96,
+      "notes": "Detailed technical hardware and warranty specifications"
+    },
+    "Bid Summary": {
+      "value": "The Maryland State Treasurer's Office is issuing this Purchase Order Request for Proposals (PORFP #E20P4600040) under the Desktop, Laptop and Tablet 2015 Master Contract to procure 30 Dell Latitude 5550 laptops and 30 Dell Thunderbolt 4 Docks. This procurement is designated as a Small Business Reserve (SBR) secondary competition to support IT hardware refresh for incoming MD529 staff. Deliverables include new hardware delivered within 45 days of award and a 3-year Dell limited hardware warranty extension.",
+      "sources": [
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 0.98,
+      "notes": "Synthesized concise 3-6 sentence executive summary"
+    }
+  },
+  "addendum_changes": [],
+  "validation": {
+    "passed": 18,
+    "failed": 0,
+    "not_found": 2
+  }
+}

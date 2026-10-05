@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: rfp-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./index_storage:/app/index_storage
+    command: python main.py --api --port 8000
+
+  ui:
+    build: .
+    container_name: rfp-ui
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+      - ./output:/app/output
+      - ./index_storage:/app/index_storage
+    command: python main.py --ui

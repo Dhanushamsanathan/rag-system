@@ -1,0 +1,37 @@
+{
+  "evaluation_pairs_count": 18,
+  "configurations": [
+    {
+      "Configuration": "Vector-Only (Dense BGE-Small)",
+      "Recall@1": 0.6111,
+      "Recall@3": 0.7778,
+      "Recall@5": 0.8889,
+      "MRR": 0.7222,
+      "nDCG@5": 0.8481
+    },
+    {
+      "Configuration": "Keyword-Only (BM25Okapi)",
+      "Recall@1": 0.6667,
+      "Recall@3": 0.9444,
+      "Recall@5": 1.0,
+      "MRR": 0.8102,
+      "nDCG@5": 0.8996
+    },
+    {
+      "Configuration": "Hybrid (Dense + BM25 RRF)",
+      "Recall@1": 0.5,
+      "Recall@3": 0.7778,
+      "Recall@5": 0.8333,
+      "MRR": 0.6315,
+      "nDCG@5": 0.7471
+    },
+    {
+      "Configuration": "Hybrid + Cross-Encoder Re-ranker",
+      "Recall@1": 0.7778,
+      "Recall@3": 0.8889,
+      "Recall@5": 0.8889,
+      "MRR": 0.8148,
+      "nDCG@5": 0.8573
+    }
+  ]
+}
