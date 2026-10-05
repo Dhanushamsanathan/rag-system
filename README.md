@@ -100,6 +100,12 @@ flowchart TD
 - `UniversalLLMClient` seamlessly switches between **Google Gemini**, **OpenAI**, **Anthropic**, **Ollama**, and an intelligent **Internal Heuristic Extraction Engine**.
 - If an evaluator runs the codebase without external API keys configured, the entire pipeline, all 11 unit tests, the benchmark evaluations, and the 20-field extractions execute **100% successfully and deterministically**.
 
+### 6. Prompt Engineering & Anti-Hallucination Guardrails
+- **Strict Evidence Grounding**: System prompts explicitly instruct the LLM to restrict responses entirely to the retrieved passage context, penalizing outside parametric assumptions.
+- **Null Safety Guardrail**: When a requested field or answer cannot be substantiated by retrieved evidence, agents are instructed to return `null` with notes `"Not found in documents"` rather than guessing.
+- **Citation Injection**: Prompts mandate bracketed source citations `[File, Page]` for every asserted factual claim.
+- **Structured Schema Enforcing**: Extraction prompts require valid JSON conforming to the Section 8.1 Pydantic schema with confidence scoring and addendum change audit trails.
+
 ---
 
 ## Retrieval Evaluation Results (Section 6.4)
@@ -282,16 +288,51 @@ docker compose up --build
 
 ---
 
-## Deliverables Checklist
+## 📌 Section 11: Deliverables Verification & Index
 
-- [x] **Source Code**: Fully modular under `ingestion/`, `search/`, `agents/`, `api/`, `eval/`, `ui/`, `tests/`.
-- [x] **Structured JSON Outputs**: Generated and validated:
-  - [`output/bid1_extracted.json`](output/bid1_extracted.json)
-  - [`output/bid2_extracted.json`](output/bid2_extracted.json)
-- [x] **Retrieval Evaluation Report**:
-  - [`output/retrieval_eval_report.json`](output/retrieval_eval_report.json)
-- [x] **Sample Q&A Log**: 10 questions with citations in [`output/sample_qa_log.json`](output/sample_qa_log.json).
-- [x] **Agent Execution Trace**: Observability logs in [`output/agent_trace.json`](output/agent_trace.json).
-- [x] **Interactive Web UI**: Streamlit application at `ui/streamlit_app.py`.
-- [x] **Docker Deployment**: `Dockerfile` and `docker-compose.yml`.
-- [x] **CI Pipeline**: GitHub Actions workflow at `.github/workflows/ci.yml`.
+Every mandatory deliverable requested in Section 11 of the assignment is indexed, linked, and verified below:
+
+### 1. Source Code (Git Repository)
+- **Repository URL**: [https://github.com/Dhanushamsanathan/rag-system](https://github.com/Dhanushamsanathan/rag-system)
+- **Ingestion Pipeline**: [`ingestion/document_parser.py`](ingestion/document_parser.py), [`ingestion/chunker.py`](ingestion/chunker.py)
+- **RAG Search Engine**: [`search/embeddings.py`](search/embeddings.py), [`search/indexer.py`](search/indexer.py), [`search/hybrid_retriever.py`](search/hybrid_retriever.py), [`search/reranker.py`](search/reranker.py), [`search/query_expander.py`](search/query_expander.py)
+- **Multi-Agent System**: [`agents/orchestrator.py`](agents/orchestrator.py), [`agents/extraction_agents.py`](agents/extraction_agents.py), [`agents/addendum_agent.py`](agents/addendum_agent.py), [`agents/validator_agent.py`](agents/validator_agent.py), [`agents/qa_agent.py`](agents/qa_agent.py)
+- **Interfaces**: FastAPI REST Service [`api/app.py`](api/app.py), Unified CLI [`main.py`](main.py), and Streamlit UI [`ui/streamlit_app.py`](ui/streamlit_app.py)
+
+### 2. README with Setup Instructions, Dependencies & Design Decisions
+- **Setup & Dependencies**: See [Section: Getting Started](#getting-started) and [`requirements.txt`](requirements.txt)
+- **Running Each Mode**: See [Section: How to Run](#how-to-run) for CLI extraction, Q&A, search, eval, API, and UI
+- **Design Decisions**: See [Section: Design Decisions & Justifications](#design-decisions--justifications) covering:
+  - *Chunking Strategy & Size*: 600-char window, 120-char overlap, heading-aware & table-atomic
+  - *Embedding Model Choice*: `BAAI/bge-small-en-v1.5` (384d, local ONNX Runtime, L2-normalized)
+  - *Retrieval Strategy*: Dense vector + BM25Okapi keyword search with Reciprocal Rank Fusion ($k=60$)
+  - *Cross-Encoder Re-Ranking*: `BAAI/bge-reranker-base` evaluating $(query, passage)$ cross-attention
+  - *Agent Framework*: Modular typed orchestrator with Pydantic shared state and critic feedback loop
+  - *Prompt Engineering & Grounding Constraints*: Strict evidence restriction, bracketed citation injection, and `"Not found in documents"` null guardrails
+
+### 3. Architecture Diagrams
+- **High-Level Flowchart**: Visualized in [Section: Architecture Overview](#architecture-overview) (Mermaid Diagram)
+- **Detailed Blueprints & Sequence Diagrams**: Comprehensive system interactions documented in [`docs/architecture.md`](docs/architecture.md)
+
+### 4. JSON Output Files (One Per Bid Folder)
+- **Bid 1 (Student and Staff Computing Devices)**: [`output/bid1_extracted.json`](output/bid1_extracted.json) *(20 fields, source citations, confidence scores, and Addendum 2 deadline extension)*
+- **Bid 2 (Dell Laptops w/ Extended Warranty)**: [`output/bid2_extracted.json`](output/bid2_extracted.json) *(20 fields, source citations, confidence scores, hardware specs, and affidavits)*
+
+### 5. Retrieval Evaluation Report
+- **Evaluation Dataset & Report**: [`output/retrieval_eval_report.json`](output/retrieval_eval_report.json)
+- **Results Table & Comparative Analysis**: See [Section: Retrieval Evaluation Results (Section 6.4)](#retrieval-evaluation-results-section-64) comparing Vector-Only, BM25-Only, Hybrid RRF, and Hybrid + Re-ranker across Recall@1/3/5, MRR, and nDCG@5.
+
+### 6. Sample Q&A Log (At Least 10 Questions with Citations)
+- **Full Q&A Log File**: [`output/sample_qa_log.json`](output/sample_qa_log.json)
+- Includes 10 representative queries covering deadlines, affidavits, warranties, and addenda modifications with verbatim inline source citations `[File, Page]`.
+
+### 7. Agent Trace (Full Example Trace of an Extraction Run)
+- **Observability Log**: [`output/agent_trace.json`](output/agent_trace.json)
+- Captures full lifecycle execution traces including planning, document ingestion, parallel specialist extraction, addendum reconciliation, validator review, feedback loop retries, and step latencies.
+
+### 8. Bonus Deliverables (Section 12)
+- **Web UI for Search and Chat**: Interactive Streamlit dashboard on **[http://localhost:8501](http://localhost:8501)**
+- **Bid Comparison Agent**: [`agents/comparison_agent.py`](agents/comparison_agent.py) producing side-by-side matrices
+- **Automated Go / No-Go Decision Engine**: [`agents/gonogo_agent.py`](agents/gonogo_agent.py) evaluating capability compliance
+- **Semantic Caching & Token/Cost Tracker**: [`search/semantic_cache.py`](search/semantic_cache.py)
+- **Containerization & CI**: [`Dockerfile`](Dockerfile), [`docker-compose.yml`](docker-compose.yml), and GitHub Actions pipeline [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
