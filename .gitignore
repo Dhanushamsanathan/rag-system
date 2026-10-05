@@ -1,7 +1,48 @@
+# Virtual Environments
 .venv/
+venv/
+env/
+ENV/
+
+# Python Caches & Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
-.DS_Store
+*.so
+
+# Testing & Coverage
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type Checking & Linting
+.mypy_cache/
+.ruff_cache/
+
+# Build & Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environment & Secrets
+.env
+.env.*
 *.env
+*.pem
+*.key
+
+# OS Files
+.DS_Store
+._*
+Thumbs.db
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log

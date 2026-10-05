@@ -1,28 +1,41 @@
-version: '3.8'
-
 services:
   api:
     build: .
     container_name: rfp-api
     ports:
       - "8000:8000"
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./data:/app/data
+      - ./data:/app/data:ro
       - ./output:/app/output
       - ./index_storage:/app/index_storage
     command: python main.py --api --port 8000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
 
   ui:
     build: .
     container_name: rfp-ui
     ports:
       - "8501:8501"
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
     volumes:
-      - ./data:/app/data
-      - ./output:/app/output
-      - ./index_storage:/app/index_storage
+      - ./data:/app/data:ro
+      - ./output:/app/output:ro
+      - ./index_storage:/app/index_storage:ro
     command: python main.py --ui
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
