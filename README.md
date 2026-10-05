@@ -1,6 +1,27 @@
 # RFP Intelligence Platform: RAG Search Engine & Multi-Agent System
 
+![CI](https://github.com/Dhanushamsanathan/rag-system/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
 An end-to-end, production-grade Request for Proposal (RFP) intelligence and extraction platform. It indexes multi-format procurement packages (HTML bid portals and complex PDFs, including addenda, specification sheets, and affidavits), powers a hybrid dense-sparse retrieval engine with cross-encoder re-ranking, and coordinates a multi-agent orchestration team to extract structured records, reconcile addenda amendments, and answer free-form procurement queries with strict source grounding.
+
+---
+
+## Table of Contents
+
+- [Architecture Overview](#architecture-overview)
+- [Key Features](#key-features)
+- [Design Decisions & Justifications](#design-decisions--justifications)
+- [Retrieval Evaluation Results](#retrieval-evaluation-results-section-64)
+- [Getting Started](#getting-started)
+- [How to Run](#how-to-run)
+- [Project Structure](#project-structure)
+- [API Reference](#api-reference)
+- [Configuration Reference](#configuration-reference)
+- [Deliverables Verification](#-section-11-deliverables-verification--index)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
@@ -202,8 +223,8 @@ In `Bid1`, the Addendum Reconciliation Agent identified and resolved changes:
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd RAg
+git clone https://github.com/Dhanushamsanathan/rag-system.git
+cd rag-system
 
 # Create and activate virtual environment
 python3 -m venv .venv
@@ -285,6 +306,136 @@ All 11 unit tests covering parsing, chunking, hybrid retrieval, and validation p
 # Build and run API + UI containers
 docker compose up --build
 ```
+---
+
+## Project Structure
+
+```
+rag-system/
+├── agents/                     # Multi-agent system
+│   ├── orchestrator.py         # Central agent coordinator with retry logic
+│   ├── ingestion_agent.py      # Document scanning & indexing agent
+│   ├── retrieval_agent.py      # Evidence retrieval tool agent
+│   ├── extraction_agents.py    # 3 specialist extractors (Dates, Commercial, Product)
+│   ├── addendum_agent.py       # Addendum reconciliation & supersession
+│   ├── validator_agent.py      # Critic agent with feedback loop
+│   ├── qa_agent.py             # Free-form Q&A with citations
+│   ├── comparison_agent.py     # Bid comparison matrix (bonus)
+│   ├── gonogo_agent.py         # Go/No-Go decision engine (bonus)
+│   ├── llm_client.py           # Universal LLM client (Gemini/OpenAI/Anthropic/Ollama/fallback)
+│   └── state.py                # Pydantic shared state schema
+├── search/                     # RAG search engine
+│   ├── embeddings.py           # ONNX BGE-Small-en-v1.5 embeddings
+│   ├── indexer.py              # Dual BM25 + vector indexer with persistence
+│   ├── hybrid_retriever.py     # RRF fusion retriever
+│   ├── reranker.py             # Cross-encoder re-ranker (BGE-Reranker-Base)
+│   ├── query_expander.py       # Procurement synonym expansion
+│   └── semantic_cache.py       # Query result caching (bonus)
+├── ingestion/                  # Document processing pipeline
+│   ├── document_parser.py      # PDF (pdfplumber) & HTML (BS4) parser
+│   └── chunker.py              # Section & table-aware sliding window chunker
+├── eval/                       # Evaluation framework
+│   ├── benchmark_data.py       # 18 ground-truth question-passage pairs
+│   └── evaluate_retrieval.py   # Recall@k, MRR, nDCG@5 benchmarks
+├── api/
+│   └── app.py                  # FastAPI REST service
+├── ui/
+│   └── streamlit_app.py        # Streamlit interactive dashboard
+├── tests/                      # Unit tests (11 tests)
+│   ├── conftest.py             # Pytest config (macOS ONNX fix)
+│   ├── test_chunker.py         # Chunking logic tests
+│   ├── test_ingestion.py       # Document parsing tests
+│   ├── test_reconciliation.py  # Addendum reconciliation tests
+│   └── test_retrieval.py       # Hybrid retrieval tests
+├── data/                       # Bid document packages
+│   ├── Bid1/                   # Dallas ISD Student & Staff Computing Devices
+│   └── Bid2/                   # Maryland Dell Laptops w/ Extended Warranty
+├── output/                     # Generated output artifacts
+│   ├── bid1_extracted.json     # Bid 1 structured extraction (20 fields)
+│   ├── bid2_extracted.json     # Bid 2 structured extraction (20 fields)
+│   ├── retrieval_eval_report.json
+│   ├── sample_qa_log.json      # 10 cited Q&A pairs
+│   ├── agent_trace.json        # Full extraction trace
+│   ├── bid_comparison_report.json
+│   └── gonogo_report.json
+├── index_storage/              # Persisted search indexes
+├── config/config.yaml          # Central configuration
+├── docs/                       # Extended documentation
+│   ├── architecture.md         # System architecture & sequence diagrams
+│   ├── about.md                # Project background
+│   └── project_goals.md        # Goals & scope
+├── main.py                     # Unified CLI entry point
+├── requirements.txt            # Python dependencies
+├── Dockerfile                  # Container image
+├── docker-compose.yml          # Multi-service orchestration
+├── .github/workflows/ci.yml    # GitHub Actions CI pipeline
+└── .env.example                # Environment variable template
+```
+
+---
+
+## API Reference
+
+Launch the API server with `python main.py --api --port 8000`. Interactive Swagger docs at [http://localhost:8000/docs](http://localhost:8000/docs).
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/health` | Health check — returns `{"status": "ok"}` |
+| `POST` | `/index` | Index a bid folder into the search engine |
+| `GET` | `/search` | Hybrid search with RRF + re-ranking |
+| `POST` | `/ask` | Cited natural-language Q&A |
+| `POST` | `/extract` | Full multi-agent structured extraction |
+
+**Example: Hybrid Search**
+```bash
+curl "http://localhost:8000/search?q=submission+deadline&bid_id=bid1&top_k=5"
+```
+
+**Example: Ask a Question**
+```bash
+curl -X POST http://localhost:8000/ask \
+  -H "Content-Type: application/json" \
+  -d '{"question": "What affidavits are required for Bid2?", "bid_id": "bid2"}'
+```
+
+**Example: Extract Structured Fields**
+```bash
+curl -X POST http://localhost:8000/extract \
+  -H "Content-Type: application/json" \
+  -d '{"bid_path": "./data/Bid1"}'
+```
+
+---
+
+## Configuration Reference
+
+All settings are centralized in [`config/config.yaml`](config/config.yaml):
+
+| Section | Key | Default | Description |
+|---------|-----|---------|-------------|
+| `embedding` | `model_name` | `BAAI/bge-small-en-v1.5` | Sentence embedding model (ONNX) |
+| `embedding` | `batch_size` | `32` | Embedding batch size |
+| `chunking` | `chunk_size` | `600` | Sliding window size (characters) |
+| `chunking` | `chunk_overlap` | `120` | Overlap between chunks |
+| `chunking` | `min_chunk_length` | `50` | Discard chunks shorter than this |
+| `retrieval` | `top_k` | `5` | Number of results to return |
+| `retrieval` | `rrf_k` | `60` | RRF fusion constant |
+| `retrieval` | `enable_reranker` | `true` | Enable cross-encoder re-ranking |
+| `retrieval` | `reranker_model` | `BAAI/bge-reranker-base` | Cross-encoder model |
+| `agent` | `max_retries` | `2` | Validator feedback loop retries |
+| `agent` | `confidence_threshold` | `0.70` | Min confidence for field acceptance |
+| `llm` | `provider` | `auto` | LLM provider (`auto`, `gemini`, `openai`, `anthropic`, `ollama`, `fallback`) |
+| `llm` | `temperature` | `0.1` | Generation temperature |
+
+**Environment Variables** (optional — set in `.env`):
+
+| Variable | Required | Description |
+|----------|:--------:|-------------|
+| `GEMINI_API_KEY` | No | Google Gemini API key |
+| `OPENAI_API_KEY` | No | OpenAI API key |
+| `ANTHROPIC_API_KEY` | No | Anthropic API key |
+
+> **Note:** If no API keys are configured, the system automatically uses its built-in deterministic extraction engine — all features work fully offline.
 
 ---
 
@@ -336,3 +487,29 @@ Every mandatory deliverable requested in Section 11 of the assignment is indexed
 - **Automated Go / No-Go Decision Engine**: [`agents/gonogo_agent.py`](agents/gonogo_agent.py) evaluating capability compliance
 - **Semantic Caching & Token/Cost Tracker**: [`search/semantic_cache.py`](search/semantic_cache.py)
 - **Containerization & CI**: [`Dockerfile`](Dockerfile), [`docker-compose.yml`](docker-compose.yml), and GitHub Actions pipeline [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
+
+---
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. **Fork** the repository
+2. **Create a feature branch**: `git checkout -b feature/your-feature`
+3. **Make your changes** and add tests where applicable
+4. **Run tests**: `PYTHONPATH=. pytest tests/ -v`
+5. **Commit** with a descriptive message: `git commit -m "feat: add your feature"`
+6. **Push** to your fork: `git push origin feature/your-feature`
+7. **Open a Pull Request** against `main`
+
+### Code Style
+- Follow PEP 8 conventions
+- Use type hints for function signatures
+- Add docstrings for public functions and classes
+- Keep all existing comments and docstrings intact
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
